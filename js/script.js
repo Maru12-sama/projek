@@ -64,3 +64,28 @@ window.onclick = (e) => {
     itemDetailModal.style.display = 'none';
   }
 };
+
+
+// Modal Box
+const wrapItem = document.querySelector('#wrapper-reg');
+const wrapButton = document.querySelectorAll('.item-detail-button');
+
+wrapButton.forEach((btn) => {
+  btn.onclick = (e) => {
+    wrapItem.style.display = 'flex';
+    e.preventDefault();
+  };
+});
+
+// klik tombol close modal
+document.querySelector('.wrapper .close-icon-c').onclick = (e) => {
+  wrapItem.style.display = 'none';
+  e.preventDefault();
+};
+
+// klik di luar modal
+window.onclick = (e) => {
+  if (e.target === wrapItem) {
+    wrapItem.style.display = 'none';
+  }
+};
