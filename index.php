@@ -278,6 +278,7 @@
   <div class="modal" id="item-detail-modal">
     <div class="modal-container">
       <a href="#" class="close-icon"><i data-feather="x"></i></a>
+      <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
       <div class="modal-content">
         <img src="img/products/1.jpg" alt="Product 1">
         <div class="product-content">
@@ -298,13 +299,21 @@
     </div>
   </div>
   <!-- Modal Box Item Detail end -->
- <div class="wrapper">
- <div class=modal-cont>
-    
-    <div class="title-text">
-      <div class="title login">
-        Account 
-      </div>
+   <!-- wrapper -->
+   <div class="login">
+
+     <div class="wrapper" id="wrapper-reg">
+       <a href="#" class="close-icon-c"><i data-feather="x"></i></a>
+       
+       <div class=modal-cont>
+         <div class="product-icons">
+           
+        </div>
+        
+        <div class="title-text">
+          <div class="title login">
+            Account 
+          </div>
       <div class="title signup">
         Account
       </div>
@@ -320,10 +329,10 @@
       <div class="form-inner">
         <form action="#" class="login" method="post">
           <div class="field">
-            <input type="text" placeholder="Email Address" required>
+            <input type="text" placeholder="Email Address" required name="emailsig">
           </div>
           <div class="field">
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Password" required name="passig">
           </div>
           <div class="pass-link">
             <a href="#">Forget password?</a>
@@ -336,15 +345,15 @@
             Don't Have Account? <a href="">Create A New</a>
           </div>
         </form>
-        <form action="#" class="signup" method="post">
+        <form action="signin.php" class="signup" method="POST">
           <div class="field">
-            <input type="text" placeholder="Email Address" required>
+            <input type="text" placeholder="Email Address" name="userReg" required>
           </div>
           <div class="field">
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Password" name= "passReg" required>
           </div>
           <div class="field">
-            <input type="password" placeholder="Confirm Password" required>
+            <input type="password" placeholder="Confirm Password" name= "cekReg" required>
           </div>
           <div class="field btn">
             <div class="btn-layer"></div>
@@ -355,8 +364,9 @@
     </div>
   </div>
   <div>
-
+    
   </div>
+</div>
   <script src="styleform.js"></script>
   <!-- Feather Icons -->
   <script>

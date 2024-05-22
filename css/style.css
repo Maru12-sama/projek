@@ -246,6 +246,9 @@ body {
 }
 
 /*login*/
+.login{
+ 
+}
 .wrapper {
   display: flex;
   position: fixed;
@@ -256,7 +259,10 @@ body {
   height: 80%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  transition: opacity 0.s5 ease, transform 0.3s ease; /* Efek transisi */
 }
+
 
 .close-icon-c {
   color: #aaa;
